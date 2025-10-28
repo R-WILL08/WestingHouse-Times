@@ -1,0 +1,37 @@
+   /* nav styles */
+        #navbar {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        /* normal link look */
+        #navbar a {
+            text-decoration: none;
+            color: inherit;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
+
+        /* image-as-button */
+        .nav-icon {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 6px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+        .nav-icon-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            border-radius: 8px;
+        }
+        .nav-icon-button:hover .nav-icon,
+        .nav-icon-button:focus .nav-icon {
+            transform: scale(1.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
